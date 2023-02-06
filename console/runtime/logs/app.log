@@ -1,0 +1,295 @@
+2023-02-06 12:46:38 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: CrontabConsole\drivers\Mysql::tasks in /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/BaseObject.php:163
+Stack trace:
+#0 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/BaseYii.php(558): yii\base\BaseObject->__set('tasks', Array)
+#1 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(CrontabConsole\drivers\Mysql), Array)
+#2 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/drivers/Mysql.php(27): yii\base\BaseObject->__construct(Array)
+#3 [internal function]: CrontabConsole\drivers\Mysql->__construct(Array)
+#4 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#5 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('CrontabConsole\\...', Array, Array)
+#6 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('CrontabConsole\\...', Array, Array)
+#7 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/Crontab.php(19): yii\BaseYii::createObject(Array)
+#8 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/controllers/CrontabController.php(45): CrontabConsole\Crontab->run()
+#9 [internal function]: CrontabConsole\controllers\CrontabController->actionRun()
+#10 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('run', Array)
+#13 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('run', Array)
+#14 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('crontab/run', Array)
+#15 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('crontab/run', Array)
+#16 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#17 /Users/mac/PhpstormProjects/yii2/yii(23): yii\base\Application->run()
+#18 {main}
+2023-02-06 12:46:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DATAGRIP_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/datagrip.vmoptions'
+    'PATH' => '/usr/local/opt/openssl@3/bin:/Users/mac/.yarn/bin:/Users/mac/.config/yarn/global/node_modules/.bin:/usr/local/opt/php@8.0/sbin:/usr/local/opt/php@8.0/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin'
+    'PYCHARM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/pycharm.vmoptions'
+    'WEBSTORM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/webstorm.vmoptions'
+    'CLION_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/clion.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/jetbrainsclient.vmoptions'
+    'TERM' => 'xterm-256color'
+    'GATEWAY_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/gateway.vmoptions'
+    'COMMAND_MODE' => 'unix2003'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/mac/Library/Caches/JetBrains/PhpStorm2021.3/terminal/history/yii2-history2'
+    'GOLAND_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/goland.vmoptions'
+    'IDEA_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/idea.vmoptions'
+    'RIDER_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/rubymine.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/jetbrains_client.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/devecostudio.vmoptions'
+    'LOGNAME' => 'mac'
+    'STUDIO_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/studio.vmoptions'
+    'XPC_SERVICE_NAME' => '0'
+    '__CFBundleIdentifier' => 'com.jetbrains.PhpStorm'
+    'SHELL' => '/bin/zsh'
+    'APPCODE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/appcode.vmoptions'
+    'USER' => 'mac'
+    'TMPDIR' => '/var/folders/g0/2m9gtw752qdf5yn3y_7lg5d40000gn/T/'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'LOGIN_SHELL' => '1'
+    'DATASPELL_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/dataspell.vmoptions'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.cHPlsGibRs/Listeners'
+    'XPC_FLAGS' => '0x0'
+    'WEBIDE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/webide.vmoptions'
+    'TERM_SESSION_ID' => 'd15751b3-c523-40ac-b947-60e2fb51a4f7'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHPSTORM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/phpstorm.vmoptions'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HOME' => '/Users/mac'
+    'SHLVL' => '1'
+    'PWD' => '/Users/mac/PhpstormProjects/yii2'
+    'OLDPWD' => '/Users/mac/PhpstormProjects/yii2'
+    '_' => '/usr/local/opt/php@8.0/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1675687598.1905
+    'REQUEST_TIME' => 1675687598
+    'argv' => [
+        0 => 'yii'
+        1 => 'crontab/run'
+    ]
+    'argc' => 2
+]
+2023-02-06 12:47:10 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(413): yii\db\Connection->getSlavePdo()
+#5 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(437): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#8 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#10 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#11 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php(884): yii\db\Schema->getQueryBuilder()
+#12 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/drivers/Mysql.php(56): yii\db\Connection->getQueryBuilder()
+#13 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/drivers/Mysql.php(36): CrontabConsole\drivers\Mysql->installCrontab()
+#14 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/BaseObject.php(109): CrontabConsole\drivers\Mysql->init()
+#15 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/drivers/Mysql.php(27): yii\base\BaseObject->__construct(Array)
+#16 [internal function]: CrontabConsole\drivers\Mysql->__construct(Array)
+#17 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#18 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('CrontabConsole\\...', Array, Array)
+#19 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('CrontabConsole\\...', Array, Array)
+#20 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/Crontab.php(19): yii\BaseYii::createObject(Array)
+#21 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/controllers/CrontabController.php(45): CrontabConsole\Crontab->run()
+#22 [internal function]: CrontabConsole\controllers\CrontabController->actionRun()
+#23 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('run', Array)
+#26 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('run', Array)
+#27 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('crontab/run', Array)
+#28 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('crontab/run', Array)
+#29 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#30 /Users/mac/PhpstormProjects/yii2/yii(23): yii\base\Application->run()
+#31 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(413): yii\db\Connection->getSlavePdo()
+#3 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(437): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/mysql/QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#6 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#8 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#9 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/db/Connection.php(884): yii\db\Schema->getQueryBuilder()
+#10 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/drivers/Mysql.php(56): yii\db\Connection->getQueryBuilder()
+#11 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/drivers/Mysql.php(36): CrontabConsole\drivers\Mysql->installCrontab()
+#12 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/BaseObject.php(109): CrontabConsole\drivers\Mysql->init()
+#13 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/drivers/Mysql.php(27): yii\base\BaseObject->__construct(Array)
+#14 [internal function]: CrontabConsole\drivers\Mysql->__construct(Array)
+#15 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#16 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('CrontabConsole\\...', Array, Array)
+#17 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('CrontabConsole\\...', Array, Array)
+#18 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/Crontab.php(19): yii\BaseYii::createObject(Array)
+#19 /Users/mac/PhpstormProjects/yii2/vendor/godv/yii2-crontab/src/controllers/CrontabController.php(45): CrontabConsole\Crontab->run()
+#20 [internal function]: CrontabConsole\controllers\CrontabController->actionRun()
+#21 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#23 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('run', Array)
+#24 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('run', Array)
+#25 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('crontab/run', Array)
+#26 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('crontab/run', Array)
+#27 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#28 /Users/mac/PhpstormProjects/yii2/yii(23): yii\base\Application->run()
+#29 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2023-02-06 12:47:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DATAGRIP_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/datagrip.vmoptions'
+    'PATH' => '/usr/local/opt/openssl@3/bin:/Users/mac/.yarn/bin:/Users/mac/.config/yarn/global/node_modules/.bin:/usr/local/opt/php@8.0/sbin:/usr/local/opt/php@8.0/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin'
+    'PYCHARM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/pycharm.vmoptions'
+    'WEBSTORM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/webstorm.vmoptions'
+    'CLION_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/clion.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/jetbrainsclient.vmoptions'
+    'TERM' => 'xterm-256color'
+    'GATEWAY_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/gateway.vmoptions'
+    'COMMAND_MODE' => 'unix2003'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/mac/Library/Caches/JetBrains/PhpStorm2021.3/terminal/history/yii2-history2'
+    'GOLAND_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/goland.vmoptions'
+    'IDEA_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/idea.vmoptions'
+    'RIDER_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/rubymine.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/jetbrains_client.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/devecostudio.vmoptions'
+    'LOGNAME' => 'mac'
+    'STUDIO_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/studio.vmoptions'
+    'XPC_SERVICE_NAME' => '0'
+    '__CFBundleIdentifier' => 'com.jetbrains.PhpStorm'
+    'SHELL' => '/bin/zsh'
+    'APPCODE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/appcode.vmoptions'
+    'USER' => 'mac'
+    'TMPDIR' => '/var/folders/g0/2m9gtw752qdf5yn3y_7lg5d40000gn/T/'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'LOGIN_SHELL' => '1'
+    'DATASPELL_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/dataspell.vmoptions'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.cHPlsGibRs/Listeners'
+    'XPC_FLAGS' => '0x0'
+    'WEBIDE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/webide.vmoptions'
+    'TERM_SESSION_ID' => 'd15751b3-c523-40ac-b947-60e2fb51a4f7'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHPSTORM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/phpstorm.vmoptions'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HOME' => '/Users/mac'
+    'SHLVL' => '1'
+    'PWD' => '/Users/mac/PhpstormProjects/yii2'
+    'OLDPWD' => '/Users/mac/PhpstormProjects/yii2'
+    '_' => '/usr/local/opt/php@8.0/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1675687630.4998
+    'REQUEST_TIME' => 1675687630
+    'argv' => [
+        0 => 'yii'
+        1 => 'crontab/run'
+    ]
+    'argc' => 2
+]
+2023-02-06 21:27:24 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: crontab/ in /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#1 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#2 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('crontab', Array)
+#3 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('crontab', Array)
+#4 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 /Users/mac/PhpstormProjects/yii2/yii(23): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "crontab". in /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('crontab', Array)
+#1 /Users/mac/PhpstormProjects/yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /Users/mac/PhpstormProjects/yii2/yii(23): yii\base\Application->run()
+#3 {main}
+2023-02-06 21:27:24 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DATAGRIP_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/datagrip.vmoptions'
+    'PATH' => '/usr/local/opt/openssl@3/bin:/Users/mac/.yarn/bin:/Users/mac/.config/yarn/global/node_modules/.bin:/usr/local/opt/php@8.0/sbin:/usr/local/opt/php@8.0/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin'
+    'PYCHARM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/pycharm.vmoptions'
+    'WEBSTORM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/webstorm.vmoptions'
+    'CLION_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/clion.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/jetbrainsclient.vmoptions'
+    'TERM' => 'xterm-256color'
+    'GATEWAY_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/gateway.vmoptions'
+    'COMMAND_MODE' => 'unix2003'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/mac/Library/Caches/JetBrains/PhpStorm2021.3/terminal/history/yii2-history2'
+    'GOLAND_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/goland.vmoptions'
+    'IDEA_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/idea.vmoptions'
+    'RIDER_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/rubymine.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/jetbrains_client.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/devecostudio.vmoptions'
+    'LOGNAME' => 'mac'
+    'STUDIO_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/studio.vmoptions'
+    'XPC_SERVICE_NAME' => '0'
+    '__CFBundleIdentifier' => 'com.jetbrains.PhpStorm'
+    'SHELL' => '/bin/zsh'
+    'APPCODE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/appcode.vmoptions'
+    'USER' => 'mac'
+    'TMPDIR' => '/var/folders/g0/2m9gtw752qdf5yn3y_7lg5d40000gn/T/'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'LOGIN_SHELL' => '1'
+    'DATASPELL_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/dataspell.vmoptions'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.cHPlsGibRs/Listeners'
+    'XPC_FLAGS' => '0x0'
+    'WEBIDE_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/webide.vmoptions'
+    'TERM_SESSION_ID' => 'd15751b3-c523-40ac-b947-60e2fb51a4f7'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHPSTORM_VM_OPTIONS' => '/Users/mac/Downloads/jetbra/vmoptions/phpstorm.vmoptions'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'HOME' => '/Users/mac'
+    'SHLVL' => '1'
+    'PWD' => '/Users/mac/PhpstormProjects/yii2'
+    'OLDPWD' => '/Users/mac/PhpstormProjects/yii2'
+    '_' => '/usr/local/opt/php@8.0/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1675690044.3137
+    'REQUEST_TIME' => 1675690044
+    'argv' => [
+        0 => 'yii'
+        1 => 'crontab'
+    ]
+    'argc' => 2
+]
